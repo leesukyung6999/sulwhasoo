@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+#wrap{width: 1270px;margin: 103px auto 0;position: relative;}
 /* cnt common */
 .cnt1, .cnt3 .swiper-slide{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;}
 .cnt2, .cnt4{margin-top: 180px;}
