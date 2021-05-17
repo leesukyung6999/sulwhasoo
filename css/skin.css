@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* .txt_wrap */
+.txt_wrap h2{font-family: Eulyoo;font-size: 60px;font-weight: 700;letter-spacing: 1.5px;color: #f57e3c;}
+.txt_wrap .strong_wrap strong{font-family: Spoqa;font-size: 30px;line-height: 1.17;letter-spacing: 0.75px;font-weight: 400;}
+/* .fade(.img_wrap2, .img_wrap3의 공통) */
+.fade p{font-family: Spoqa;font-size: 16px;line-height: 2.19;letter-spacing: 0.4px;margin-top: 40px;}
+.fade h3{/* line-height: 1.17; */letter-spacing: 0.75px;margin-top: 11px;}
+
+/* cnt1,  cnt3 common */
+.cnt1, .cnt3 .swiper-slide{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;}
+/* cnt2, cnt4 common */
+.cnt2, .cnt4{margin-top: 180px;}
+.cnt2 .txt_wrap, .cnt4 .txt_wrap{text-align: center;}
+.cnt2 .strong_wrap, .cnt4 .strong_wrap{margin: 67px 0;}
+.img_wrap3{margin-top: 100px;}
+.img_wrap3 li + li{margin-left: 80px;}
+.img_wrap3 li a:first-child img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+
+/* .cnt1 */
+.cnt1{margin-top: 88px;}
+.cnt1 .fade h2{margin-top: 113px;}
+.cnt1 .fade .strong_wrap{margin: 91px 0 88px;}
+.cnt1 .strong_wrap strong:first-child{display: block;margin-bottom: 25px;}
+.cnt1 .strong_wrap strong:nth-child(2){margin-right: 47px;}
+.cnt1 .best{padding: 91px 45px 181px 55px;box-sizing: border-box;background: url("../images/skin/yoonjo_bg.jpg") no-repeat right center;width: 824px;height: 710px;}
+/* .cnt1 .best .best_texture:hover img::after{content: "";position: absolute;left: 0;top: 0;background: url("../img/skin/yoonjo_texture.png");width: 466px;height: 466px;z-index: 10;} */
+
+/* .cnt2 */
+.cnt2 .img_wrap3{margin: 99px 0 240px;}
+.cnt2 .img_wrap3 li .skin{position: relative;width: 327px;height: 321px;border-radius: 50%;box-shadow: 1px 2px 3px #3b3b3b inset;display: inline-block;}
+.cnt2 .img_wrap3 li a:hover::after, .cnt2 .img_wrap3 li a:focus::after{content: "";position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 10;}
+.cnt2 .img_wrap3 li:nth-child(1) .skin:hover::after, .cnt2 .img_wrap3 li:nth-child(1) .skin:focus::after{background: url("../images/skin/jaeumsoo_texture.png");width: 334px;height: 326px;}
+.cnt2 .img_wrap3 li:nth-child(2) .skin:hover::after, .cnt2 .img_wrap3 li:nth-child(2) .skin:focus::after{background: url("../images/skin/jaeum_lotion_texture.png");width: 327px;height: 326px;}
+.cnt2 .img_wrap3 li:nth-child(3) .skin:hover::after, .cnt2 .img_wrap3 li:nth-child(3) .skin:focus::after{background: url("../images/skin/jaeumsoo_cream_texture.png");width: 341px;height: 334px;}
+/* .cnt3 */
+.cnt3{margin-top: 240px;}
+.cnt3 .slide2{text-align: right;}
+.cnt3 .txt_wrap h2{margin-top: 23px;}
+.cnt3 .txt_wrap .strong_wrap{margin-top: 46px;}
+.cnt3 .slide1 .txt_wrap strong{margin-right: 64px;}
+.cnt3 .slide2 .txt_wrap strong{margin-left: 64px;}
+.cnt3 .img_wrap2{margin-top: 83px;}
+.cnt3 .img_wrap2 li + li{padding-left: 44px;}
+.cnt3 .img_wrap2 li .skin{position: relative;width: 271px;height: 270px;border-radius: 50%;box-shadow: 1px 2px 3px #3b3b3b inset;display: inline-block;}
+.img_wrap2 li .skin img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.cnt3 .img_wrap2 li a:hover::after, .cnt3 .img_wrap2 li a:focus::after{content: "";position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 10;background: no-repeat left top;}
+.cnt3 .jaeumsaeng .img_wrap2 li:nth-child(1) .skin:hover::after, .cnt3 .jaeumsaeng .img_wrap2 li:nth-child(1) .skin:focus::after{background: url("../images/skin/jaeumsaengsoo_texture.png");width: 282px;height: 280px;}
+.cnt3 .jaeumsaeng .img_wrap2 li:nth-child(2) .skin:hover::after, .cnt3 .jaeumsaeng .img_wrap2 li:nth-child(2) .skin:focus::after{background: url("../images/skin/jaeumsaenga_mple_texture.png");width: 277px;height: 276px;}
+.cnt3 .sulin .img_wrap2 li:nth-child(1) .skin:hover::after, .cnt3 .sulin .img_wrap2 li:nth-child(1) .skin:focus::after{background: url("../images/skin/sullin_serum_texture.png");width: 293px;height: 293px;}
+.cnt3 .sulin .img_wrap2 li:nth-child(2) .skin:hover::after, .cnt3 .sulin .img_wrap2 li:nth-child(2) .skin:focus::after{background: url("../images/skin/sulin_cream_texture.png");width: 293px;height: 295px;margin-left: -10px;}
+.swiper-button-prev, .swiper-button-next{background: no-repeat;}
+.swiper-button-prev{background-image: url("../images/skin/btn_prev.png");left: 0;}
+.swiper-button-next{background-image: url("../images/skin/btn_next.png");right: 0;}
+.swiper-button-prev:after, .swiper-button-next:after{display: none;}
+
+/* .cnt4 */
+.cnt4{margin-bottom: 81px;}
+.cnt4 .img_wrap3 li .skin{position: relative;width: 316px;height: 310px;border-radius: 50%;box-shadow: 1px 2px 3px #3b3b3b inset;display: inline-block;}
+.cnt4 .img_wrap3 li a:hover::after, .cnt4 .img_wrap3 li a:focus::after{content: "";position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 10;background: no-repeat left top;}
+.cnt4 .img_wrap3 li:nth-child(1) .skin:hover::after, .cnt4 .img_wrap3 li:nth-child(1) .skin:focus::after{background: url("../images/skin/jajungsoo_texture.png");width: 326px;height: 325px;}
+.cnt4 .img_wrap3 li:nth-child(2) .skin:hover::after, .cnt4 .img_wrap3 li:nth-child(2) .skin:focus::after{background: url("../images/skin/jajung_lotion_texture.png");width: 322px;height: 321px;}
+.cnt4 .img_wrap3 li:nth-child(3) .skin:hover::after, .cnt4 .img_wrap3 li:nth-child(3) .skin:focus::after{background: url("../images/skin/jajung_serum_texture.png");width: 322px;height: 321px;}
