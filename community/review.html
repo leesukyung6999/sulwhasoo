@@ -8,7 +8,34 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/swiper-bundle.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/subcommon.css">
+    <link rel="stylesheet" href="../css/sub3.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                spaceBetween: 80,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                autoplay: {
+                    delay: 5000,
+                },
+
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -41,59 +68,164 @@
             </div>
         </div>
     </header>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div id="wrap">
+    <div class="review_controller">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div id="wrap" class="review">
         <section id="cnt1">
             <h2 class="best_tit">베스트 리뷰</h2>
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide1">
-                    <img src="../images/review/review_1.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide slide2">
-                    <img src="../images/review/review_2.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide slide3">
-                    <img src="../images/review/review_3.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide slide4">
-                    <img src="../images/review/review_4.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide slide5">
-                    <img src="../images/review/review_5.jpg" alt="">
-                  </div>
+                <div class="swiper-wrapper d_f">
+                    <div class="swiper-slide slide1">
+                        <div class="bestreview_txt">
+                            <p class="bestreview_cnt">"30대 초반부터 쓰기 시작해서 저의 다섯번째 윤조입니다. 피부가 정말 좋은 지인들을 보니 다들 설화수를 쓰더라구요."</p>
+                            <img src="../images/review/star_five.png" alt="별 다섯개" class="star">
+                            <p>AP몰에서 윤조에센스를<br> 직접 구매하신 er****님 리뷰 중</p>
+                        </div>
+                        <div class="shade"><img src="../images/review/review_1.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="bestreview_txt">
+                            <p class="bestreview_cnt">"설화수 제품 중 가장 좋아하는 제품이에요. 속당김도 줄어들고, 가볍게 흡수되어서 화장 전 사용하기에도 너무 좋아요."</p>
+                            <img src="../images/review/star_five.png" alt="별 다섯개" class="star">
+                            <p>AP몰에서 윤조에센스를<br> 직접 구매하신 hy****님 리뷰 중</p>
+                        </div>
+                        <img src="../images/review/review_2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="bestreview_txt">
+                            <p class="bestreview_cnt">"제 피부는 복합성인데 건조한 부분에 정말 좋은 것 같아요. 갑갑하지도 않고, 친구에게 추천하고 싶은 제품입니다"</p>
+                            <img src="../images/review/star_five.png" alt="별 다섯개" class="star">
+                            <p>AP몰에서 윤조에센스를<br> 직접 구매하신 tn****님 리뷰 중</p>
+                        </div>
+                        <img src="../images/review/review_3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="bestreview_txt">
+                            <p class="bestreview_cnt">"건조한 피부를 촉촉하게 유지해주는 인생템입니다. 향도 좋고 피부흡수도 잘 되어서 너무 잘 쓰고 있습니다."</p>
+                            <img src="../images/review/star_five.png" alt="별 다섯개" class="star">
+                            <p>AP몰에서 윤조에센스를<br> 직접 구매하신 ma****님 리뷰 중</p>
+                        </div>
+                        <img src="../images/review/review_4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <div class="bestreview_txt">
+                            <p class="bestreview_cnt">"세안 후 첫단계로 바르면 피부 속부터 촉촉하고 유수분 밸런스가 안정되게 잡아주는 느낌이 들어요."</p>
+                            <img src="../images/review/star_five.png" alt="별 다섯개" class="star">
+                            <p>AP몰에서 윤조에센스를<br> 직접 구매하신 js****님 리뷰 중</p>
+                        </div>
+                        <img src="../images/review/review_5.jpg" alt="">
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
+            </div>
         </section>
         <section id="cnt2">
             <h2 class="all_tit">전체 리뷰</h2>
-            <nav class="breadcrumb" aria-label="리뷰 정렬 순서">
-                <ol class="d_f">
-                    <li aria-current="page">
-                        <a href="#">랭킹순</a>
-                    </li>
-                    <li>
-                        <a href="#">최신순</a>
-                    </li>
-                    <li>
-                        <a href="#">평점 높은순</a>
-                    </li>
-                    <li>
-                        <a href="#">평점 낮은순</a>
-                    </li>
-                </ol>
-            </nav>
-            <div class="search_review">
-                <input type="text" placeholder="리뷰 검색">
-                <button type="button">
-                    <img src="../images/review/search.png" alt="리뷰 검색하기">
-                </button>
+            <div class="allreview_row d_f">
+                <nav class="breadcrumb" aria-label="리뷰 정렬 순서">
+                    <ol class="d_f">
+                        <li aria-current="page">
+                            <a href="#">랭킹순</a>
+                        </li>
+                        <li>
+                            <a href="#">최신순</a>
+                        </li>
+                        <li>
+                            <a href="#">평점 높은순</a>
+                        </li>
+                        <li>
+                            <a href="#">평점 낮은순</a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="search_review">
+                    <input type="text" placeholder="리뷰 검색">
+                    <button type="button">
+                        <img src="../images/review/search.png" alt="리뷰 검색하기">
+                    </button>
+                </div>
             </div>
-            
+            <table id="review_all">
+                <caption class="blind">전체 리뷰 </caption>
+                <colgroup>
+                    <col class="wid250" span="3">
+                    <col class="wid600">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" id="date">날짜</th>
+                        <th scope="col" id="product">제품</th>
+                        <th scope="col" id="idname">아이디</th>
+                        <th scope="col" id="content">내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date">21.05.11</td>
+                        <td class="product">자음생 에센스</td>
+                        <td class="idname">vara****</td>
+                        <td class="content">향은 인삼향이 강합니다. 크림을 바르면 트러블이 나는 분께 훌륭한 대안이라고 생각해요</td>
+                    </tr>
+                    <tr>
+                        <td class="date">21.05.10</td>
+                        <td class="product">설린수</td>
+                        <td class="idname">engl***</td>
+                        <td class="content">설화수를 좀 늦은 나이에 처음 시작하네요~ 여름에 붉은기 진정에 좋다고 해서 사봤는데 효과도 좋고 피부결도 좋아졌어요</td>
+                    </tr>
+                    <tr>
+                        <td class="date">21.05.10</td>
+                        <td class="product">자음생 앰플</td>
+                        <td class="idname">shal***</td>
+                        <td class="content">좀 묽은 느낌이 있긴 하나 그래도 흡수력도 좋고, 특유의 향도 이질감도 없어요 앞으로 꾸준히 구매할</td>
+                    </tr>
+                    <tr>
+                        <td class="date">21.05.06</td>
+                        <td class="product">윤조에센스</td>
+                        <td class="idname">dain***</td>
+                        <td class="content">엄마가 너무 좋아하시네요. 엄마 말씀으로는 피부도 촉촉해지고 흡수도 잘되고 향도 좋다고 하시네요</td>
+                    </tr>
+                    <tr>
+                        <td class="date">21.05.02</td>
+                        <td class="product">자음생크림</td>
+                        <td class="idname">desi****</td>
+                        <td class="content">처음 사용했을땐 생각보다 너무 끈적해서 놀랐는데 조금 지나니 쫀쫀해지는 느낌이 들더라구요</td>
+                    </tr>
+                    <tr>
+                        <td class="date">21.05.01</td>
+                        <td class="product">윤조에센스</td>
+                        <td class="idname">mint****</td>
+                        <td class="content">다른 제품 구매하고 받은 샘플 사용해보고 바로 구매했어요~피부 밀착력이 뛰어납니다 재구매할 예정</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section id="cnt3">
+            <h2 class="event_tit">매달 베스트 리뷰어 5분을 선정하여 적립금 1만원을 증정합니다
+            </h2>
+            <div class="event">
+                <ul class="d_f">
+                    <li>
+                        <img src="../images/review/txt_review.png" alt="">
+                        <p class="txt">텍스트 리뷰</p>
+                        <p class="prize">1,000</p>
+                        <p class="warn">※ 텍스트 30자 이상</p>
+                    </li>
+                    <li>
+                        <img src="../images/review/photo_review.png" alt="">
+                        <p class="txt">포토 리뷰</p>
+                        <p class="prize">2,000</p>
+                        <p class="warn">※ 텍스트 30자 이상</p>
+                    </li>
+                    <li>
+                        <img src="../images/review/best_review.png" alt="">
+                        <p class="txt">베스트 리뷰어</p>
+                        <p class="prize">10,000</p>
+                    </li>
+                </ul>
+                <p class="notice">*베스트 리뷰어는 매달 초 공지됩니다.</p>
+                <p class="marketing">*설화수에 남겨주신 리뷰는 마케팅 용도로 활용될 수 있습니다.</p>
+            </div>
         </section>
     </div>
     <footer id="footer" class="bdbox">
