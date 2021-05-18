@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스킨케어 : 제품</title>
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/swiper-bundle.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/subcommon.css">
-    <link rel="stylesheet" href="../css/skin.css">
-    <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
-    <script src="../js/fadeIn.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/skin.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             const swiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
 
             // Navigation arrows
             navigation: {
@@ -42,57 +45,57 @@
     <header id="header">
         <h1 class="logo">
             <a href="index.html">
-                <img src="../images/common/header_logo.png" alt="설화수">
+                <img src="img/header/logo.png" alt="설화수">
             </a>
         </h1>
         <a href="" class="gnb_open">
             <span class="blind">전체 메뉴 열기</span>
         </a>
         <div class="util">
-            <p class="lang" title="언어 : 한국어">KR</p>
+            <div class="lang"><img src="img/header/kr.png" alt="언어: 한국어"></div>
             <a href="#" class="login">
-                <img src="../images/common/login.png" alt="로그인">
+                <img src="img/header/login.png" alt="로그인">
             </a>
             <a href="#" class="shop">
-                <img src="../images/common/shop.png" alt="장바구니">
+                <img src="img/header/shop.png" alt="장바구니">
             </a>
             <button class="search">
-                <img src="../images/common/search.png" alt="검색">
+                <img src="img/header/search.png" alt="검색">
             </button>
             <div class="search_input">
                 <input type="text" placeholder="검색어 입력">
-                <button type="button"><img src="../images/common/search_enter.png" alt="검색어 입력확인"></button>
+                <button><img src="img/header/search_enter.png" alt="검색어 입력확인"></button>
             </div>
         </div>
     </header>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    
     <div id="wrap">
         <nav class="breadcrumb" aria-label="사이트 이동 경로">
             <ol class="d_f">
                 <li>
                     <a href="index.html" title="홈으로 돌아가기">
-                        <img src="../images/skin/home.png" alt="홈">
+                        <img src="img/skin/home.png" alt="홈">
                     </a>
                 </li>
                 <li>
-                    <img src="../images/skin/arrow.png" alt="">
+                    <img src="img/skin/arrow.png" alt="">
                 </li>
-                <li aria-current="page" class="current">
+                <li aria-current="page">
                     <a href="skin.html">스킨케어</a>
                 </li>
                 <li>
-                    <img src="../images/skin/arrow.png" alt="">
+                    <img src="img/skin/arrow.png" alt="">
                 </li>
                 <li>
                     <a href="makeup.html">메이크업</a>
                 </li>
             </ol>
         </nav>
-        <section id="cnt1">
-            <div class="fade"> 
+        <section class="cnt1">
+            <h2 class="blind">베스트 제품 소개 : 윤조 에센스</h2>
+            <div class="fade">
                 <div class="txt_wrap fade_right">
-                    <h2>윤조</h2>
+                    <h3>윤조</h3>
                     <div class="strong_wrap">
                         <strong>#베스트</strong>
                         <strong>#안티에이징</strong>
@@ -104,16 +107,17 @@
             </div>
             <div class="fade">
                 <div class="best fade_left">
-                    <a href="" class="yoonjo"><img src="../images/skin/yoonjo.png" alt="윤조 에센스"></a>
-                    <h3>윤조 에센스</h3>
+                    <img src="img/skin/yoonjo.png" alt="윤조 에센스">
+                    <h4>윤조 에센스</h4>
                     <a href="" class="btn_more">자세히 보기</a>
                 </div>
             </div>
         </section>
-        <section id="cnt2">
+        <section class="cnt2">
+            <h2 class="blind">두번째 제품 라인 소개: 자음</h2>
             <div class="fade">
                 <div class="txt_wrap fade_left">
-                    <h2>자음</h2>
+                    <h3>자음</h3>
                     <div class="strong_wrap"><strong>#보습/윤기</strong></div>
                     <p>충만한 보습으로 촉촉하고 부드럽게 마무리되어<br>
                         유연한 피부를 가꾸어주는 설화수의 기본/필수 보습 라인</p>
@@ -122,36 +126,37 @@
             <div class="jaeum fade">
                 <ul class="img_wrap3 fade_up d_f">
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jaeumsoo.png" alt="자음수">
+                        <a href="#">
+                            <img src="img/skin/jaeumsoo.png" alt="자음수">
                         </a>
-                        <h3>자음수</h3>
+                        <h4>자음수</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jaeum_lotion.png" alt="자음유액">
+                        <a href="#">
+                            <img src="img/skin/jaeum_lotion.png" alt="자음유액">
                         </a>
-                        <h3>자음유액</h3>
+                        <h4>자음유액</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jaeumsoo_cream.png" alt="자음수분영양크림">
+                        <a href="#">
+                            <img src="img/skin/jaeumsoo_cream.png" alt="자음수분영양크림">
                         </a>
-                        <h3>자음수분영양크림</h3>
+                        <h4>자음수분영양크림</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="cnt3">
+        <section class="cnt3">
+            <h2 class="blind">세번째 제품 라인 소개: 자음생, 설린</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1 fade">
-                        <div>
+                        <div class="fade_right">
                             <div class="txt_wrap">
-                                <h2>자음생</h2>
+                                <h3>자음생</h3>
                                 <div class="strong_wrap">
                                     <strong>#안티에이징</strong>
                                     <strong>#인삼</strong>
@@ -162,33 +167,33 @@
                             <div class="jaeumsaeng">
                                 <ul class="img_wrap2 d_f">
                                     <li>
-                                        <a href="#" class="skin">
-                                            <img src="../images/skin/jaeumsaengsoo.png" alt="자음생수">
+                                        <a href="#">
+                                            <img src="img/skin/jaeumsaengsoo.png" alt="자음생수">
                                         </a>
-                                        <h3>자음생수</h3>
+                                        <h4>자음생수</h4>
                                         <a href="" class="btn_more">자세히 보기</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="skin">
-                                            <img src="../images/skin/jaeumsaeng_ample.png" alt="자음생앰플">
+                                        <a href="#">
+                                            <img src="img/skin/jaeumsaeng_ample.png" alt="자음생앰플">
                                         </a>
-                                        <h3>자음생 앰플</h3>
+                                        <h4>자음생 앰플</h4>
                                         <a href="" class="btn_more">자세히 보기</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="jaeumsaeng_bg">
-                            <img src="../images/skin/jaeumsaeng_bg.jpg" alt="">
+                        <div class="jaeumsaeng_bg fade_left">
+                            <img src="img/skin/jaeumsaeng_bg.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide slide2 fade">
-                        <div class="sulin_bg">
-                            <img src="../images/skin/sulin_bg.jpg" alt="">
+                        <div class="sulin_bg fade_right">
+                            <img src="img/skin/sulin_bg.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="fade_left">
                             <div class="txt_wrap">
-                                <h2>설린</h2>
+                                <h3>설린</h3>
                                 <div class="strong_wrap">
                                     <strong>#안티에이징</strong>
                                     <strong>#매화</strong>
@@ -199,17 +204,17 @@
                             <div class="sulin">
                                 <ul class="img_wrap2 d_f">
                                     <li>
-                                        <a href="#" class="skin">
-                                            <img src="../images/skin/sulin_serum.png" alt="설린 세럼">
+                                        <a href="#">
+                                            <img src="img/skin/sulin_serum.png" alt="설린 세럼">
                                         </a>
-                                        <h3>설린세럼</h3>
+                                        <h4>설린세럼</h4>
                                         <a href="" class="btn_more">자세히 보기</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="skin">
-                                            <img src="../images/skin/sulin_cream.png" alt="설린아이크림">
+                                        <a href="#">
+                                            <img src="img/skin/sulin_cream.png" alt="설린아이크림">
                                         </a>
-                                        <h3>설린아이크림</h3>
+                                        <h4>설린아이크림</h4>
                                         <a href="" class="btn_more">자세히 보기</a>
                                     </li>
                                 </ul>
@@ -217,15 +222,21 @@
                         </div>
                     </div>
                 </div>
-    
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
         </section>
-        <section id="cnt4">
+        <section class="cnt4">
+            <h2 class="blind">네번째 제품 라인 소개: 자정</h2>
             <div class="fade">
-                <div class="txt_wrap fade_right">
-                    <h2>자정</h2>
+                <div class="txt_wrap fade_left">
+                    <h3>자정</h3>
                     <div class="strong_wrap">
-                        <strong>#미백/피부톤</strong>
+                        <strong>#미백</strong>
+                        <strong>#피부톤</strong>
                     </div>
                     <p>거친 피부결을 정돈해주고<br>
                         미백 효능을 선사하는 젤 타입 브라이트닝</p>
@@ -234,37 +245,37 @@
             <div class="jajung fade">
                 <ul class="img_wrap3 fade_up d_f">
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jajungsoo.png" alt="자정수">
+                        <a href="#">
+                            <img src="img/skin/jajungsoo.png" alt="자정수">
                         </a>
-                        <h3>자정수</h3>
+                        <h4>자정수</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jajung_lotion.png" alt="자정유액">
+                        <a href="#">
+                            <img src="img/skin/jajung_lotion.png" alt="자정유액">
                         </a>
-                        <h3>자정유액</h3>
+                        <h4>자정유액</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                     <li>
-                        <a href="#" class="skin">
-                            <img src="../images/skin/jajung_serum.png" alt="자정수세럼">
+                        <a href="#">
+                            <img src="img/skin/jajung_serum.png" alt="자정수세럼">
                         </a>
-                        <h3>자정수세럼</h3>
+                        <h4>자정수세럼</h4>
                         <a href="" class="btn_more">자세히 보기</a>
                     </li>
                 </ul>
             </div>
         </section>
     </div>
-    <footer id="footer" class="bdbox">
+    <!-- <footer id="footer" class="bdbox">
         <div class="foot_wrap">
             <div class="foot_top d_f bdbox">
                 <div class="foot_logo">
-                    <a href="#"><img src="../images/common/footer_logo.png" alt="sulwhasoo"></a>
+                    <a href="#"><img src="image/footer/footer_logo.png" alt="sulwhasoo"></a>
                 </div>
-                <a href="" class="btn_top bdbox"><img src="../images/common/top.png" alt="본문 위로 올라가기"></a>
+                <a href="" class="btn_top bdbox"><img src="image/footer/top.png" alt="본문 위로 올라가기"></a>
             </div>
             <div class="foot_area p_r">
                 <div class="foot_menu">
@@ -293,36 +304,36 @@
                     <p>
                         <span>&copy;AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED.</span>
                         <a href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank"
-                            title="wa인증마크(새창)"><img src="../images/common/mark.png" alt="wa인증마크"></a>
+                            title="wa인증마크(새창)"><img src="image/footer/mark.png" alt="wa인증마크"></a>
                     </p>
                 </div>
                 <div class="foot_sns p_a">
                     <ul class="d_f">
                         <li>
                             <a href="https://www.facebook.com/sulwhasoo.official" target="_blank">
-                                <img src="../images/common/facebook.png" alt="페이스북">
+                                <img src="image/footer/facebook.png" alt="페이스북">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/sulwhasoo.official" target="_blank">
-                                <img src="../images/common/youtube.png" alt="유튜브">
+                                <img src="image/footer/youtube.png" alt="유튜브">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/sulwhasoo.official" target="_blank">
-                                <img src="../images/common/instagram.png" alt="인스타그램">
+                                <img src="image/footer/instagram.png" alt="인스타그램">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/sulwhasoo.official" target="_blank">
-                                <img src="../images/common/kakao.png" alt="카카오톡">
+                                <img src="image/footer/kakao.png" alt="카카오톡">
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

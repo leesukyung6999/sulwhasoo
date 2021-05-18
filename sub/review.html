@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메이크업 : 제품</title>
+    <title>리뷰 : 커뮤니티</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/swiper-bundle.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/subcommon.css">
-    <link rel="stylesheet" href="../css/makeup.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/fadeIn.js"></script>
 </head>
 
 <body>
@@ -40,97 +37,63 @@
             </button>
             <div class="search_input">
                 <input type="text" placeholder="검색어 입력">
-                <button type="button"><img src="../images/common/search_enter.png" alt="검색어 입력확인"></button>
+                <button><img src="../images/common/search_enter.png" alt="검색어 입력확인"></button>
             </div>
         </div>
     </header>
-    <div id="tit_bg"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <div id="wrap">
-        <nav class="breadcrumb" aria-label="사이트 이동 경로">
-            <ol class="d_f">
-                <li>
-                    <a href="../index.html" title="홈으로 돌아가기">
-                        <img src="../images/skin/home.png" alt="홈">
-                    </a>
-                </li>
-                <li>
-                    <img src="../images/skin/arrow.png" alt="">
-                </li>
-                <li>
-                    <a href="skin.html">스킨케어</a>
-                </li>
-                <li>
-                    <img src="../images/skin/arrow.png" alt="">
-                </li>
-                <li aria-current="page" class="current">
-                    <a href="makeup.html">메이크업</a>
-                </li>
-            </ol>
-        </nav>
-        <h2 id="title">메이크업</h2>
-        <div class="search_product">
-            <input type="text" placeholder="제품 검색">
-            <button type="button"><img src="../images/makeup/search.png" alt="제품 검색하기"></button>
-        </div>
         <section id="cnt1">
-            <h3 class="blind">파운데이션 대표 3가지 소개</h3>
-            <ul class="fade d_f">
-                <li class="fade_up">
-                    <a href="" class="makeup"><img src="../images/makeup/poundation.png" alt="퍼펙팅 파운데이션"></a>
-                    <h4>퍼펙팅 파운데이션</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-3">
-                    <a href="" class="makeup"><img src="../images/makeup/poundation_glow.png" alt="퍼펙팅 파운데이션 글로우"></a>
-                    <h4>퍼펙팅 파운데이션 글로우</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-6">
-                    <a href="" class="makeup"><img src="../images/makeup/poundation_jinsul.png" alt="진설 파운데이션"></a>
-                    <h4>진설 파운데이션</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-            </ul>
+            <h2 class="best_tit">베스트 리뷰</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1">
+                    <img src="../images/review/review_1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide slide2">
+                    <img src="../images/review/review_2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide slide3">
+                    <img src="../images/review/review_3.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide slide4">
+                    <img src="../images/review/review_4.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide slide5">
+                    <img src="../images/review/review_5.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </section>
         <section id="cnt2">
-            <h3 class="blind">쿠션 대표 3가지 소개</h3>
-            <ul class="fade d_f">
-                <li class="fade_up">
-                    <a href="" class="makeup"><img src="../images/makeup/cushion.png" alt="퍼펙팅 쿠션"></a>
-                    <h4>퍼펙팅 쿠션</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-3">
-                    <a href="" class="makeup"><img src="../images/makeup/cushion_bright.png" alt="자정 브라이트닝 쿠션"></a>
-                    <h4>자정 브라이트닝 쿠션</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-6">
-                    <a href="" class="makeup"><img src="../images/makeup/cushion_jinsul.png" alt="진설 쿠션"></a>
-                    <h4>진설 쿠션</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-            </ul>
+            <h2 class="all_tit">전체 리뷰</h2>
+            <nav class="breadcrumb" aria-label="리뷰 정렬 순서">
+                <ol class="d_f">
+                    <li aria-current="page">
+                        <a href="#">랭킹순</a>
+                    </li>
+                    <li>
+                        <a href="#">최신순</a>
+                    </li>
+                    <li>
+                        <a href="#">평점 높은순</a>
+                    </li>
+                    <li>
+                        <a href="#">평점 낮은순</a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="search_review">
+                <input type="text" placeholder="리뷰 검색">
+                <button type="button">
+                    <img src="../images/review/search.png" alt="리뷰 검색하기">
+                </button>
+            </div>
+            
         </section>
         <section id="cnt3">
-            <h3 class="blind">기타 상품 중 대표 3가지 소개</h3>
-            <ul class="fade d_f">
-                <li class="fade_up">
-                    <a href="" class="makeup"><img src="../images/makeup/powder.png" alt="퍼펙팅 파우더"></a>
-                    <h4>퍼펙팅 파우더</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-3">
-                    <a href="" class="makeup"><img src="../images/makeup/lip.png" alt="에센셜 립세럼스틱"></a>
-                    <h4>에센셜 립세럼스틱</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-                <li class="fade_up delay-6">
-                    <a href="" class="makeup"><img src="../images/makeup/sun.png" alt="상백크립(선크림)"></a>
-                    <h4>상백크립(선크림)</h4>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </li>
-            </ul>
         </section>
     </div>
     <footer id="footer" class="bdbox">
