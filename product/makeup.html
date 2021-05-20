@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/subcommon.css">
     <link rel="stylesheet" href="../css/sub3.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
     <script src="../js/fadeIn.js"></script>
 </head>
 
@@ -24,9 +25,27 @@
                 <img src="../images/common/header_logo.png" alt="설화수">
             </a>
         </h1>
-        <a href="" class="gnb_open">
-            <span class="blind">전체 메뉴 열기</span>
-        </a>
+        <a href="" class="btn_nav" role="button">
+            <span class="blind">전체메뉴 열기</span>
+          </a>
+          <nav id="gnb">
+            <h2 class="blind">주메뉴</h2>
+            <ul>
+              <li><a href="" data-link="first">브랜드스토리</a></li>
+              <li><a href="">제품</a>
+                <ul>
+                  <li><a href="">스킨케어</a></li>
+                  <li><a href="">메이크업</a></li>
+                </ul>
+              </li>
+              <li><a href="">설화수소식지</a></li>
+              <li><a href="">커뮤니티</a></li>
+              <li><a href="">플래그십스토어</a></li>
+            </ul>
+            <!-- 스타일 적용해 줘요 -->
+            <button class="btn_navclose" type="button" data-link="last"><img src="../images/common/nav_back.png" alt=""></button>
+          </nav>
+          <div class="gnb_dim"></div>
         <div class="util">
             <p class="lang" title="언어 : 한국어">KR</p>
             <a href="#" class="login">
@@ -43,9 +62,11 @@
                 <button type="button"><img src="../images/common/search_enter.png" alt="검색어 입력확인"></button>
             </div>
         </div>
+        <img src="../images/common/header_bg.png" alt="">
     </header>
-    <div id="tit_bg"></div>
+    <div id="makeup_bg"></div>
     <div id="wrap" class="makeup">
+       
         <nav class="breadcrumb" aria-label="사이트 이동 경로">
             <ol class="d_f">
                 <li>
@@ -57,7 +78,7 @@
                     <img src="../images/skin/arrow.png" alt="">
                 </li>
                 <li>
-                    <a href="skin.html">스킨케어</a>
+                    <a href="skin.html">제품</a>
                 </li>
                 <li>
                     <img src="../images/skin/arrow.png" alt="">
@@ -66,7 +87,7 @@
                     <a href="makeup.html">메이크업</a>
                 </li>
             </ol>
-        </nav>
+        </nav> 
         <h2 id="title">메이크업</h2>
         <div class="search_product">
             <input type="text" placeholder="제품 검색">

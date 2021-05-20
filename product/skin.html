@@ -27,6 +27,11 @@
                 prevEl: '.swiper-button-prev',
             },
 
+            pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                },
+
             autoplay: {
                 delay: 5000,
             },
@@ -64,7 +69,7 @@
               <li><a href="">플래그십스토어</a></li>
             </ul>
             <!-- 스타일 적용해 줘요 -->
-            <button class="btn_navclose" type="button" data-link="last">전체메뉴 닫기</button>
+            <button class="btn_navclose" type="button" data-link="last"><img src="../images/common/nav_back.png" alt=""></button>
           </nav>
           <div class="gnb_dim"></div>
         <div class="util">
@@ -83,10 +88,12 @@
                 <button type="button"><img src="../images/common/search_enter.png" alt="검색어 입력확인"></button>
             </div>
         </div>
+        <img src="../images/common/header_bg.png" alt="">
     </header>
     <div class="skin_controller">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
     </div>
     <div id="wrap" class="skin">
         <nav class="breadcrumb" aria-label="사이트 이동 경로">
@@ -99,14 +106,14 @@
                 <li>
                     <img src="../images/skin/arrow.png" alt="">
                 </li>
-                <li aria-current="page" class="current">
-                    <a href="skin.html">스킨케어</a>
+                <li>
+                    <a href="skin.html">제품</a>
                 </li>
                 <li>
                     <img src="../images/skin/arrow.png" alt="">
                 </li>
-                <li>
-                    <a href="makeup.html">메이크업</a>
+                <li aria-current="page" class="current">
+                    <a href="skin.html">스킨케어</a>
                 </li>
             </ol>
         </nav>
