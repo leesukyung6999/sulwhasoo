@@ -8,22 +8,21 @@
 #cnt2 .txt_cnt2{line-height: 50px;padding: 50px 100px;width: 280px;text-align: center;}
 #cnt2 p{font-size: 25px;}
 #cnt2 h3{font-size: 40px;}
-#cnt2{position: relative;}
 #cnt2 .txt_cnt2 > a{display: inline-block; font-size: 20px;border: 1px solid #3b3b3b;width: 120px;height: 30px;line-height: 30px;text-align: center;}
 #cnt2 .txt_cnt2 > a:hover, #cnt2 .txt_cnt2 > a:focus{border: 1px solid #fcb95e;background: #fcb95e;color: #fff;}
 /* 화살표 */
 .inner{overflow: hidden;}
 .swiper-container{overflow: visible;}
-.controller{position: absolute;top: 280px;right: 100px;}
+.controller{top: 280px;right: 100px;}
 /* 화살표 svg */
-.swiper-button-prev{position: absolute;top: 0;left: -200px; background: url(../images/index/section2/arrow_prev.png);width: 70px;height: 19px;}
+.swiper-button-prev{top: 0;left: -200px; background: url(../images/index/section2/arrow_prev.png);width: 70px;height: 19px;}
 .swiper-button-prev:hover, .swiper-button-prev:focus{background: url(../images/index/section2/arrow_prev_hover.png);}
 .swiper-button-next{background: url(../images/index/section2/arrow_next.png);width: 70px;height: 19px;}
 .swiper-button-next:hover, .swiper-button-next:focus{background: url(../images/index/section2/arrow_next_hover.png);}
 .controller div::after{display: none;}
 .circle_prev, .circle_next{stroke-dasharray: 144;stroke-dashoffset: 144;height: 50px;width: 50px;}
-.circle_prev{position: absolute;top: -10px;left: -10px;}
-.circle_next{position: absolute;top: -10px;right: -10px;}
+.circle_prev{top: -10px;left: -10px;}
+.circle_next{top: -10px;right: -10px;}
 .circle_prev:hover,.circle_next:hover{animation: svgAni 1s linear forwards;}
 @keyframes svgAni {
   0%{stroke-dashoffset: 144;}
@@ -33,7 +32,7 @@
 #cnt2 h3{font-weight: 300;}
 #cnt2 .swiper-wrapper{text-align: center; align-items: flex-end;padding: 100px 0px;}
 /* 제품 배경 */
-#cnt2 .product_bg img{position: absolute;left: 0;bottom: 270px;left: calc(50% - 157.5px); z-index: -1;}
+#cnt2 .product_bg img{left: 0;bottom: 270px;left: calc(50% - 157.5px); z-index: -1;}
 /* 스크롤바 */
 .swiper-scrollbar{width: 50%;height: 5px;margin: 0 auto;}
 

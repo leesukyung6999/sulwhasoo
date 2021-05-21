@@ -1,14 +1,15 @@
 @charset "utf-8";
 
+.flagship_cover{background: url(../images/flagship/00.cover.jpg);background-size: cover;width: 100%;height: 300px;}
+
+.fz40{font-size: 40px;color:#f57e3c}
 .flagship_store {padding-top: 100px;}
 .txt_flag{text-align: center;position: relative;}
-.txt_flag h2{font-size: 40px;color:#f57e3c}
 .txt_flag > p{font-size: 15px;padding-top: 20px;}
 .txt_flag{padding-top: 15px;line-height: 25px;}
 .txt_flag .scroll{padding-top: 40px;}
 .txt_flag .scroll p::after{content: "";display: block;background: #3b3b3b;width: 1px;height: 50px;margin: 10px auto;}
 .address{padding-left: 30px;line-height: 30px;font-family: spoqa;}
-.address h3{font-size: 40px;color:#f57e3c}
 .address img{padding-top: 20px;}
 .address h4{font-weight: 400;}
 
