@@ -95,7 +95,7 @@ ul,ol{list-style: none;}
 img{border: none;vertical-align: top;}
 a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
 address{font-style: normal;}
-input{border: none;background: none;font-family: inherit;font-size: inherit;color: inherit;}
+input, select{border: none;background: none;font-family: inherit;font-size: inherit;color: inherit;}
 button{border: none;background: none;cursor: pointer;font-family: inherit;font-size: inherit;color: inherit;}
 table{border-spacing: none;border-collapse: collapse}
 header, nav, section, article, footer, aside, figure, figcaption{display: block;}
@@ -123,8 +123,8 @@ body{font-family: "Eulyoo";font-size: 16px;color:#3b3b3b;}
 #header{position: fixed;z-index: 900;top: 0;left: 0;width: 100%;height: 60px;}/* height: 532px; background: url("../images/common/header_bg.png") no-repeat left top;pointer-events: none; */
 #header .logo{position: absolute;left: 47px;top: 35px;pointer-events: auto;z-index: 90;}/* gnb 네비게이션이 나타나도 로고가 가장 상위 위치시키기 */
 #header .btn_nav{position: absolute;left: 50px;top: 125px;background: url("../images/common/navigation.png") no-repeat center;width: 42px;height: 32px;pointer-events: auto;}
-#header .util{position: absolute;top: 24px;right: 42px;width: 210px;height: 35px;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;align-items: center;pointer-events: auto;}
-#header .util .lang{font-family: mapo;font-size: 25px;line-height: 35px;}/* line-height: 35; 35배 라고 하네요... */
+#header .util{position: absolute;top: 24px;right: 42px;width: 210px;height: 40px;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;align-items: center;pointer-events: auto;}
+#header .util .lang{font-family: mapo;font-size: 25px;line-height: 40px;}/* line-height: 35; 35배 라고 하네요... */
 #header .util .search_input{display: none;position: absolute;bottom: -40px;right: 0;width: 100%;height: 40px;border-bottom: 1px solid #3b3b3b;line-height: 40px;}
 #header .util .search_input input{border: none;background: transparent;font-size: 16px;}
 #header .util .search_input button{position: absolute;right: 0;top: 10px;}
@@ -133,7 +133,7 @@ body{font-family: "Eulyoo";font-size: 16px;color:#3b3b3b;}
 /* 팀원 : 양가영 */
 /* #gnb */
 #gnb{visibility: hidden;position: fixed;top: 0px;left: -300px;width: 300px;height: 100%;overflow: auto;z-index: 80;background: url(../images/common/nav_bg.png);}
-#gnb > ul{font-size: 30px;padding: 200px 0 0 50px;}
+#gnb > ul{font-size: 25px;padding: 200px 0 0 50px;}
 #gnb > ul > li + li{padding-top: 40px;}
 #gnb ul li ul li{padding: 20px 0 0 25px; font-size: 18px;}
 #gnb ul li a:hover{color: #f57e3c;}
